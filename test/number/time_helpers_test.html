@@ -37,73 +37,59 @@
     },
     
     testSecondReturnsSelf: function() { with(this) {
-      var x = 1;
-      assertEqual(x.second(), 1);
+      assertEqual((1).second(), 1);
     }},
 
     testSecondsReturnsSelf: function() { with(this) {
-      var x = 5;
-      assertEqual(x.seconds(), 5);
+      assertEqual((5).seconds(), 5);
     }},
 
     testMinuteReturnsAmountOfSeconds: function() { with(this) {
-      var x = 3;
-      assertEqual(x.minute(), 3 * 60);
+      assertEqual((3).minute(), 3 * 60);
     }},
 
     testMinutesReturnsAmountOfSeconds: function() { with(this) {
-      var x = 4;
-      assertEqual(x.minutes(), 4 * 60);
+      assertEqual((4).minutes(), 4 * 60);
     }},
 
     testHourReturnsAmountOfSeconds: function() { with(this) {
-      var x = 3;
-      assertEqual(x.hour(), 3 * 60 * 60);
+      assertEqual((3).hour(), 3 * 60 * 60);
     }},
 
     testHoursReturnsAmountOfSeconds: function() { with(this) {
-      var x = 4;
-      assertEqual(x.hours(), 4 * 60 * 60);
+      assertEqual((4).hours(), 4 * 60 * 60);
     }},
 
     testDayReturnsAmountOfSeconds: function() { with(this) {
-      var x = 3;
-      assertEqual(x.day(), 3 * 60 * 60 * 24);
+      assertEqual((3).day(), 3 * 60 * 60 * 24);
     }},
 
     testDaysReturnsAmountOfSeconds: function() { with(this) {
-      var x = 4;
-      assertEqual(x.days(), 4 * 60 * 60 * 24);
+      assertEqual((4).days(), 4 * 60 * 60 * 24);
     }},
 
     testWeekReturnsAmountOfSeconds: function() { with(this) {
-      var x = 3;
-      assertEqual(x.week(), 3 * 60 * 60 * 24 * 7);
+      assertEqual((3).week(), 3 * 60 * 60 * 24 * 7);
     }},
 
     testWeeksReturnsAmountOfSeconds: function() { with(this) {
-      var x = 4;
-      assertEqual(x.weeks(), 4 * 60 * 60 * 24 * 7);
+      assertEqual((4).weeks(), 4 * 60 * 60 * 24 * 7);
     }},
 
     testMonthReturnsAmountOfSeconds: function() { with(this) {
-      var x = 3;
-      assertEqual(x.month(), 3 * 60 * 60 * 24 * 30);
+      assertEqual((3).month(), 3 * 60 * 60 * 24 * 30);
     }},
 
     testMonthsReturnsAmountOfSeconds: function() { with(this) {
-      var x = 4;
-      assertEqual(x.months(), 4 * 60 * 60 * 24 * 30);
+      assertEqual((4).months(), 4 * 60 * 60 * 24 * 30);
     }},
 
     testYearReturnsAmountOfSeconds: function() { with(this) {
-      var x = 3;
-      assertEqual(x.year(), 3 * 60 * 60 * 24 * 365);
+      assertEqual((3).year(), 3 * 60 * 60 * 24 * 365);
     }},
 
     testYearsReturnsAmountOfSeconds: function() { with(this) {
-      var x = 4;
-      assertEqual(x.years(), 4 * 60 * 60 * 24 * 365);
+      assertEqual((4).years(), 4 * 60 * 60 * 24 * 365);
     }},
   }); 
 // ]]>
