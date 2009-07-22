@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>JavaScript unit test file</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <script src="../assets/jsunittest.js" type="text/javascript"></script>
+  <script src="../../lib/number/time_helpers.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="../assets/unittest.css" type="text/css" />
+</head>
+<body>
+
+<div id="content">
+
+  <div id="header">
+    <h1>JavaScript unit test file</h1>
+    <p>
+      This file tests <strong>number/time_helpers.js</strong>.
+    </p>
+  </div>
+
+  <!-- Log output (one per Runner, via {testLog: "testlog"} option)-->
+  <div id="testlog"></div>
+  
+  <!-- Put sample/test html here -->
+  <div id="sample">
+  </div>
+</div>
+
+<script type="text/javascript">
+// <![CDATA[
+  new Test.Unit.Runner({
+    setup: function() {
+    },
+    
+    teardown: function() {
+    },
+    
+    testSecondReturnsSelf: function() { with(this) {
+      var x = 1;
+      assertEqual(x.second(), 1);
+    }},
+
+    testSecondsReturnsSelf: function() { with(this) {
+      var x = 5;
+      assertEqual(x.seconds(), 5);
+    }},
+
+    testMinuteReturnsAmountOfSeconds: function() { with(this) {
+      var x = 3;
+      assertEqual(x.minute(), 3 * 60);
+    }},
+
+    testMinutesReturnsAmountOfSeconds: function() { with(this) {
+      var x = 4;
+      assertEqual(x.minutes(), 4 * 60);
+    }},
+
+    testHourReturnsAmountOfSeconds: function() { with(this) {
+      var x = 3;
+      assertEqual(x.hour(), 3 * 60 * 60);
+    }},
+
+    testHoursReturnsAmountOfSeconds: function() { with(this) {
+      var x = 4;
+      assertEqual(x.hours(), 4 * 60 * 60);
+    }},
+
+    testDayReturnsAmountOfSeconds: function() { with(this) {
+      var x = 3;
+      assertEqual(x.day(), 3 * 60 * 60 * 24);
+    }},
+
+    testDaysReturnsAmountOfSeconds: function() { with(this) {
+      var x = 4;
+      assertEqual(x.days(), 4 * 60 * 60 * 24);
+    }},
+
+    testWeekReturnsAmountOfSeconds: function() { with(this) {
+      var x = 3;
+      assertEqual(x.week(), 3 * 60 * 60 * 24 * 7);
+    }},
+
+    testWeeksReturnsAmountOfSeconds: function() { with(this) {
+      var x = 4;
+      assertEqual(x.weeks(), 4 * 60 * 60 * 24 * 7);
+    }},
+
+    testMonthReturnsAmountOfSeconds: function() { with(this) {
+      var x = 3;
+      assertEqual(x.month(), 3 * 60 * 60 * 24 * 30);
+    }},
+
+    testMonthsReturnsAmountOfSeconds: function() { with(this) {
+      var x = 4;
+      assertEqual(x.months(), 4 * 60 * 60 * 24 * 30);
+    }},
+
+    testYearReturnsAmountOfSeconds: function() { with(this) {
+      var x = 3;
+      assertEqual(x.year(), 3 * 60 * 60 * 24 * 365);
+    }},
+
+    testYearsReturnsAmountOfSeconds: function() { with(this) {
+      var x = 4;
+      assertEqual(x.years(), 4 * 60 * 60 * 24 * 365);
+    }},
+  }); 
+// ]]>
+</script>
+</body>
+</html>
