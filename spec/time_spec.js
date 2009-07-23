@@ -5,7 +5,7 @@ Screw.Unit(function() {
     describe(".current_date", function() {
     
       it("should return a Date object", function() {
-          expect(Time.current_date()).to(be_an_instance_of, Date);
+        expect(Time.current_date()).to(be_an_instance_of, Date);
       });
 
     });
