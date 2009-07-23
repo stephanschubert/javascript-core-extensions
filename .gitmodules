@@ -4,3 +4,6 @@
 [submodule "vendor/smoke"]
 	path = vendor/smoke
 	url = git://github.com/andykent/smoke.git
+[submodule "vendor/screw-matchers"]
+	path = vendor/screw-matchers
+	url = git://github.com/jazen/screw-matchers.git
