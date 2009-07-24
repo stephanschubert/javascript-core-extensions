@@ -1,0 +1,39 @@
+=== Javascript Core Extensions
+
+A collection of extensions to builtin objects and extra objects/functions
+easing the Javascript experience :)
+
+== 1. How to use
+
+Just include the files you need. You can ignore spec/ and vendor/ as they
+are the testsuite.
+
+Open spec/suite.html in your favourite browser to check if everything's fine. 
+
+== 2. Builtin objects
+
+= Number
+
+* second(s)
+* minute(s)
+* hour(s)
+* day(s)
+* week(s)
+* month(s)
+* year(s)
+
+= Date
+
+* distance_of_time_in_words (not ready yet)
+
+== 3. Extra objects
+
+= Time
+
+* current_date
+* now
+  
+
+More to come.
+
+Copyright (c) 2009 Stephan Schubert, released under the MIT license
