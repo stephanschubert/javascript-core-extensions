@@ -26,6 +26,14 @@ Open spec/suite.html in your favourite browser to check if everything's fine.
 
 * distance_of_time_in_words (not ready yet)
 
+= String
+
+* trim
+
+= Array
+
+* first, last
+
 == 3. Extra objects
 
 = Time
